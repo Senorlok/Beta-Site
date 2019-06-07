@@ -16,7 +16,7 @@ defaults:
   -
     #The default matter will override all files in the directory it is specified to, unless a specific type is used in scope.
     scope:
-      path: "{{site.baseurl}}_posts/New-Dir-Posts"            #Select which files to apply the default values. 
+      path: "{{site.baseurl}}/_posts/New-Dir-Posts"            #Select which files to apply the default values. 
       #path: ""                               #Leave as blank and it will apply to all.
       type: "posts"                           #The type of files we want to affect, incase there are other file types in the directory.
     values:
@@ -25,6 +25,6 @@ defaults:
       date:   2010-01-01 01:00:00 0000
 
     scope:
-      path: "{{site.baseurl}}assets/images"
+      path: "{{site.baseurl}}/assets/images"
     values:
       image: true  
