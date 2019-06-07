@@ -1,0 +1,17 @@
+---
+layout: CONDS-LOOP
+---
+<!-- A laoyout to test conditionals -->
+
+{% if page.title == "Conditional Two" and page.author == "Darude"%}                 <!-- Using a conditional with 2 parameters -->
+    This is the SECOND post, that passed 'if' the Conditional.
+{% elsif page.title == "Conditional One" and page.categories contains "update" %}   <!-- Note the 'contains' syntax for page.categories -->
+    This is the FIRST post, that passed the 'elsif' Conditional.
+{% else %}
+    This is some OTHER post, that passed the 'else' Conditional.
+{% endif %}
+
+<h2>{{page.title}}</h2>
+<hr>
+
+{{content}}               

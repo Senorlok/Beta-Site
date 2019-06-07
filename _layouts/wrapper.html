@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>This is the overall wrapper</h1>
+        <h2>{{site.email}}</h2>             <!-- Gets data from the site's _config.yml file -->
+        <title>{{site.email}}</title>       <!-- Gets data from the site's _config.yml file, and uses it as the page's url title. -->
+        <h2>{{page.title}}</h2>             <!-- Gets data from the referenced page -->
+        <h4>{{layout.author}}</h4>          <!-- Gets data from the referenced layout -->
+        Welcome to the wrapper
+        <hr>
+        {%include header.html color="orange"%}             <!-- Gets data from the header.html file, also pass a color variable-->  
+
+        {{content}}         <!-- The content argument in the wrapper layout, makes sure the content of the sublayout, 
+                                 and the page that references the sublayout, are displayed -->
+        <br>
+    </body>
+</html>
+
+<!--  -->
