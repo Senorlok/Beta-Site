@@ -1,5 +1,5 @@
 
-{% for file in {{site.baseurl}}site.static_files %} 
+{% for file in site.static_files %} 
 
     {% if file.image %}   
         <img src="{{file.path}}" alt="{{file.name}}"> <br> 
