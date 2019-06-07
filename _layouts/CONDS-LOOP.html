@@ -1,0 +1,12 @@
+<!-- A laoyout to test looping conditionals -->
+
+{% for post in site.posts %}
+<!-- Not only does loop make a list of links, but the conditional checks the url of the current page against 
+     the url of the posts in the list, and if it's the match, the link colour is made red. -->
+    <li><a style="{% if page.url == post.url %}color:red;{% endif %}" href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+<h2>{{page.title}}</h2>
+<hr>
+
+{{content}}              
