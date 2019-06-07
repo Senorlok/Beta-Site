@@ -1,8 +1,0 @@
-
-Each blogpost file in _posts should have a date in it's file name: YYYY-MM-DD-FILE-NAM.EXTENSION
-    Future dates are not automatically accepted.
-
-You can create new directories within the _posts directories.
-    Files stored in the sub directroy will be as if they are in the _posts directroy.
-
-Default front matter is retrieved from the _config.yml file.
