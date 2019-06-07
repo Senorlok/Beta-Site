@@ -1,0 +1,27 @@
+
+{% for file in site.static_files %} 
+
+    {% if file.image %}   
+        <img src="{{file.path}}" alt="{{file.name}}"> <br> 
+    {% endif %}
+
+
+{% endfor %}
+
+
+
+{{ content }}
+  
+
+{%- for post in site.posts -%}
+
+    <h3>
+    <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+    </a>
+    </h3>
+
+{%- endfor -%}
+
+
+  
