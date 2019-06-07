@@ -1,3 +1,0 @@
-You can override default layouts or create new layouts by creating new files for them within the _layouts folder.
-For this example, we created the custom TEST_LAYOUT.html. Creating a 'post' layout would override the default 'post' layout.
-We also created a wrapper layout: wrapper.html
