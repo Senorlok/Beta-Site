@@ -28,7 +28,7 @@
     <!-- In _config.yml we defined the scope of what we consider an image, 
          note how Tree Sample (which is not in 'images') will not be displayed --> 
     {% if file.image %}   
-        <img src="{{file.path | relative_url }}" alt="{{file.name}}"> <br> <!-- src asks for file source; alt asks for alternative text to display,
+        <img src="{{file.path}} | relative_url" alt="{{file.name}}"> <br> <!-- src asks for file source; alt asks for alternative text to display,
                                                               if it cannot display the image -->    
     {% endif %}
 
