@@ -2,7 +2,7 @@
 {% for file in {{site.baseurl}}site.static_files %} 
 
     {% if file.image %}   
-        <img src="ggg" alt="{{file.name}}"> <br> 
+        <img src="{{file.path}}" alt="{{file.name}}"> <br> 
     {% endif %}
 
 
