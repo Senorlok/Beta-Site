@@ -1,2 +1,0 @@
-The include tag allows you to include the content from another file stored in the _includes folder.
-This helps when mixing and matching different layouts and includes, to get different page styles.
